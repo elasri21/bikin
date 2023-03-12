@@ -1,0 +1,193 @@
+footer {
+    .top-footer {
+        background-color: $white;
+        padding: 60px 0;
+        .container {
+            .useful-links {
+                flex-wrap: wrap;
+                gap: 30px;
+                .addresses {
+                    h3 {
+                        font-size: 30px;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        color: $title-c;
+                        margin-bottom: 15px;
+                    }
+                    p {
+                        font-size: 15px;
+                        color: $h3-h;
+                        &.mt {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .links {
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $title-c;
+                        text-transform: capitalize;
+                        margin-bottom: 15px;
+                    }
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        li {
+                            gap: 6px;
+                            i {
+                                font-size: 14px;
+                                color: $h3-h;
+                            }
+                            a {
+                                font-size: 15px;
+                                text-transform: capitalize;
+                                color: $title-c;
+                                font-weight: 400;
+                            }
+                            &:hover {
+                                a {
+                                    color: $h3-h;
+                                }
+                            }
+                        }
+                    }
+                    &.form-container {
+                        max-width: 350px;
+                        p {
+                            font-size: 15px;
+                            margin-bottom: 20px;
+                        }
+                        form {
+                            @media (max-width: 500px) {
+                                flex-wrap: wrap;
+                                gap: 15px;
+                                input {
+                                    width: 100% !important;
+                                    &.email {
+                                        border-right: 1px solid $blue-c !important;
+                                        border-radius: 3px !important;
+                                    }
+                                    &.subscribe {
+                                        border-radius: 3px !important;
+                                    }
+                                }
+                            }
+                            display: flex;
+                            input {
+                                display: block;
+                                font-size: 16px;
+                                font-weight: 500;
+                                &.email {
+                                    padding: 10px 20px;
+                                    border: 1px solid $blue-c;
+                                    border-right: none;
+                                    border-radius: 3px 0 0 3px;
+                                }
+                                &.subscribe {
+                                    width: fit-content;
+                                    border: 1px solid $blue-c;
+                                    background-color: $blue-c;
+                                    border-radius: 0 3px 3px 0;
+                                    padding: 10px 30px;
+                                    color: $white;
+                                    cursor: pointer;
+                                    &:hover {
+                                        background-color: $blue-h;
+                                        border-color: $blue-h;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copy-right {
+        background-color: $copy-bg;
+        padding: 30px 0;
+        .container {
+            .copy {
+                @media (max-width: 681px) {
+                    .rights {
+                        width: 100% !important;
+                        p {
+                            text-align: center;
+                        }
+                    }
+                    .social {
+                        justify-content: center;
+                        width: 100% !important;
+                    }
+                }
+                gap: 30px;
+                flex-wrap: wrap;
+                .rights {
+                    p {
+                        font-size: 15px;
+                        text-transform: capitalize;
+                        a {
+                            font-weight: 600;
+                            text-transform: lowercase;
+                        }
+                        &:first-of-type {
+                            a {
+                                color: $c-444;
+                                &:hover {
+                                    color: $blue-c;
+                                }
+                            }
+                        }
+                        &:last-of-type {
+                            a {
+                                color: $blue-c;
+                                &:hover {
+                                    color: $blue-h;
+                                }
+                            }
+                        }
+                    }
+                }
+                .social {
+                    gap: 15px;
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 3px;
+                        background-color: $social-bg;
+                        i {
+                            font-size: 16px;
+                            color: $blue-c;
+                            transition: .3s;
+                        }
+                        &:hover {
+                            background-color: $blue-c;
+                            i {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .go-up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $blue-h;
+        opacity: 0;
+        i {
+            font-size: 20px;
+            color: $white;
+        }
+        &:hover {
+            background-color: $blue-c;
+        }
+    }
+}
